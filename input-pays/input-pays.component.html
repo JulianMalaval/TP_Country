@@ -1,0 +1,4 @@
+<input type="text" #input (blur)="onBlur()" (focus)="OnFocus()" placeholder="Entrez le nom d'un pays">
+<ul>
+  <li *ngFor="let country of currentCountries" (click)="selectCountry($event)">{{ country.libelle }}</li>
+</ul>
